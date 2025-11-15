@@ -53,7 +53,7 @@ A tool that helps users check **movie profanity**, **age suitability**, **movie 
 
 ```bash
 git clone <repo-url>
-cd movie-profiler
+cd safemovies
 ```
 
 ### 2. Install dependencies (with Bun)
