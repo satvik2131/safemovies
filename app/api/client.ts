@@ -1,6 +1,10 @@
 export const apiClient = {
   get: async <T>(url: string): Promise<T> => {
     const apiKey = process.env.NEXT_PUBLIC_MOVIE_API;
+    if (!apiKey) {
+      throw new Error("No Movie API is defined");
+    }
+
     const res = await fetch(url, {
       headers: {
         "x-rapidapi-host": "imdb236.p.rapidapi.com",
