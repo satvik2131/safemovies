@@ -1,6 +1,6 @@
 import { Input } from "./ui/input";
 import { ModeToggle } from "./toggleTheme";
-import Logo from "@/app/logo";
+import Logo from "@/components/logo";
 
 export default function Header() {
   return (

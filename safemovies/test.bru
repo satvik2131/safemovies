@@ -1,0 +1,24 @@
+meta {
+  name: test
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  include_adult: false
+  include_video: false
+  language: en-US
+  page: 1
+  sort_by: popularity.desc
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
